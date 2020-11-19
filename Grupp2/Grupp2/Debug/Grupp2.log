@@ -1,0 +1,191 @@
+﻿  campaignService.cpp
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(10,25): error C2065: 'Customer': undeclared identifier
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(10,18): error C2923: 'std::vector': 'Customer' is not a valid template type argument for parameter '_Ty'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(10,18): error C2976: 'std::vector': too few template arguments
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\vector(412): message : see declaration of 'std::vector'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(11,26): error C2065: 'Customer': undeclared identifier
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(11,19): error C2923: 'std::vector': 'Customer' is not a valid template type argument for parameter '_Ty'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(11,19): error C2976: 'std::vector': too few template arguments
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\vector(412): message : see declaration of 'std::vector'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(12,28): error C2065: 'Customer': undeclared identifier
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(12,21): error C2923: 'std::vector': 'Customer' is not a valid template type argument for parameter '_Ty'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(12,21): error C2976: 'std::vector': too few template arguments
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\vector(412): message : see declaration of 'std::vector'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(13,28): error C2065: 'Customer': undeclared identifier
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(13,21): error C2923: 'std::vector': 'Customer' is not a valid template type argument for parameter '_Ty'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(13,21): error C2976: 'std::vector': too few template arguments
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\vector(412): message : see declaration of 'std::vector'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(14,38): error C2065: 'Customer': undeclared identifier
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(14,31): error C2923: 'std::vector': 'Customer' is not a valid template type argument for parameter '_Ty'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(14,31): error C2976: 'std::vector': too few template arguments
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\vector(412): message : see declaration of 'std::vector'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(15,42): error C2065: 'Customer': undeclared identifier
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(15,35): error C2923: 'std::vector': 'Customer' is not a valid template type argument for parameter '_Ty'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(15,35): error C2976: 'std::vector': too few template arguments
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\vector(412): message : see declaration of 'std::vector'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(16,27): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(16,10): error C2146: syntax error: missing ';' before identifier 'getCustomerFromDB'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(16,41): error C2923: 'std::vector': 'Customer' is not a valid template type argument for parameter '_Ty'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(16): message : see declaration of 'Customer'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(16,41): error C2976: 'std::vector': too few template arguments
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\vector(412): message : see declaration of 'std::vector'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(17,57): error C2923: 'std::vector': 'Customer' is not a valid template type argument for parameter '_Ty'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(16): message : see declaration of 'Customer'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(17,57): error C2976: 'std::vector': too few template arguments
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\vector(412): message : see declaration of 'std::vector'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(18,40): error C2923: 'std::vector': 'Customer' is not a valid template type argument for parameter '_Ty'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(16): message : see declaration of 'Customer'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(18,40): error C2976: 'std::vector': too few template arguments
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\vector(412): message : see declaration of 'std::vector'
+  Customer.cpp
+  customterService.cpp
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(9,41): error C2061: syntax error: identifier 'vector'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(11,2): error C2065: 'Customer': undeclared identifier
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(11,11): error C2146: syntax error: missing ';' before identifier 'kund'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(11,11): error C3861: 'kund': identifier not found
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(12,2): error C2065: 'kundlist': undeclared identifier
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(12,22): error C2065: 'kund': undeclared identifier
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(16,27): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(16,10): error C2146: syntax error: missing ';' before identifier 'getCustomerFromDB'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(16,69): error C2143: syntax error: missing ';' before '{'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(16,69): error C2447: '{': missing function header (old-style formal list?)
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(22,63): error C2061: syntax error: identifier 'vector'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(23,19): error C2065: 'kundlist': undeclared identifier
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(23,43): error C3536: 'kund': cannot be used before it is initialized
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(23,46): error C2065: 'kundlist': undeclared identifier
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(32,46): error C2061: syntax error: identifier 'vector'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(33,19): error C2065: 'kundlist': undeclared identifier
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(33,43): error C3536: 'kund': cannot be used before it is initialized
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(33,46): error C2065: 'kundlist': undeclared identifier
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(35,4): error C2065: 'kundlist': undeclared identifier
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(42,37): error C2061: syntax error: identifier 'vector'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(44,7): error C2065: 'kundlist': undeclared identifier
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(45,20): error C2065: 'kundlist': undeclared identifier
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(45,19): error C2672: 'begin': no matching overloaded function found
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(45,30): error C2893: Failed to specialize function template 'unknown-type std::begin(_Container &)'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\xutility(1961): message : see declaration of 'std::begin'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(45,30): message : With the following template arguments:
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(45,30): message : '_Container=unknown-type'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(45,30): error C2784: 'const _Elem *std::begin(std::initializer_list<_Elem>) noexcept': could not deduce template argument for 'std::initializer_list<_Elem>' from 'unknown-type'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\initializer_list(57): message : see declaration of 'std::begin'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(45,19): error C2672: 'end': no matching overloaded function found
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(45,30): error C2893: Failed to specialize function template 'unknown-type std::end(_Container &)'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\xutility(1971): message : see declaration of 'std::end'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(45,30): message : With the following template arguments:
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(45,30): message : '_Container=unknown-type'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(45,30): error C2784: 'const _Elem *std::end(std::initializer_list<_Elem>) noexcept': could not deduce template argument for 'std::initializer_list<_Elem>' from 'unknown-type'
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\initializer_list(63): message : see declaration of 'std::end'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(45,30): error C3536: '<begin>$L0': cannot be used before it is initialized
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(45,30): error C3536: '<end>$L0': cannot be used before it is initialized
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(45,28): error C2100: illegal indirection
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(51,18): error C2065: 'vector': undeclared identifier
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(51,36): error C2065: 'kundlist': undeclared identifier
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(51,44): error C2182: 'addCustomer': illegal use of type 'void'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(52,1): error C2448: 'addCustomer': function-style initializer appears to be a function definition
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(64,19): error C2065: 'vector': undeclared identifier
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(64,37): error C2065: 'kundlist': undeclared identifier
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(64,45): error C2182: 'readCustomer': illegal use of type 'void'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(65,1): error C2448: 'readCustomer': function-style initializer appears to be a function definition
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(78,21): error C2065: 'vector': undeclared identifier
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(78,39): error C2065: 'kundlist': undeclared identifier
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(78,47): error C2182: 'updateCustomer': illegal use of type 'void'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(79,1): error C2448: 'updateCustomer': function-style initializer appears to be a function definition
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(98,21): error C2065: 'vector': undeclared identifier
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(98,39): error C2065: 'kundlist': undeclared identifier
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(98,47): error C2182: 'deleteCustomer': illegal use of type 'void'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(99,1): error C2448: 'deleteCustomer': function-style initializer appears to be a function definition
+  main.cpp
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(10,25): error C2065: 'Customer': undeclared identifier
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(10,18): error C2923: 'std::vector': 'Customer' is not a valid template type argument for parameter '_Ty'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(10,18): error C2976: 'std::vector': too few template arguments
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\vector(412): message : see declaration of 'std::vector'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(11,26): error C2065: 'Customer': undeclared identifier
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(11,19): error C2923: 'std::vector': 'Customer' is not a valid template type argument for parameter '_Ty'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(11,19): error C2976: 'std::vector': too few template arguments
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\vector(412): message : see declaration of 'std::vector'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(12,28): error C2065: 'Customer': undeclared identifier
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(12,21): error C2923: 'std::vector': 'Customer' is not a valid template type argument for parameter '_Ty'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(12,21): error C2976: 'std::vector': too few template arguments
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\vector(412): message : see declaration of 'std::vector'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(13,28): error C2065: 'Customer': undeclared identifier
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(13,21): error C2923: 'std::vector': 'Customer' is not a valid template type argument for parameter '_Ty'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(13,21): error C2976: 'std::vector': too few template arguments
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\vector(412): message : see declaration of 'std::vector'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(14,38): error C2065: 'Customer': undeclared identifier
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(14,31): error C2923: 'std::vector': 'Customer' is not a valid template type argument for parameter '_Ty'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(14,31): error C2976: 'std::vector': too few template arguments
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\vector(412): message : see declaration of 'std::vector'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(15,42): error C2065: 'Customer': undeclared identifier
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(15,35): error C2923: 'std::vector': 'Customer' is not a valid template type argument for parameter '_Ty'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(15,35): error C2976: 'std::vector': too few template arguments
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\vector(412): message : see declaration of 'std::vector'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(16,27): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(16,10): error C2146: syntax error: missing ';' before identifier 'getCustomerFromDB'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(16,41): error C2923: 'std::vector': 'Customer' is not a valid template type argument for parameter '_Ty'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(16): message : see declaration of 'Customer'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(16,41): error C2976: 'std::vector': too few template arguments
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\vector(412): message : see declaration of 'std::vector'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(17,57): error C2923: 'std::vector': 'Customer' is not a valid template type argument for parameter '_Ty'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(16): message : see declaration of 'Customer'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(17,57): error C2976: 'std::vector': too few template arguments
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\vector(412): message : see declaration of 'std::vector'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(18,40): error C2923: 'std::vector': 'Customer' is not a valid template type argument for parameter '_Ty'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(16): message : see declaration of 'Customer'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(18,40): error C2976: 'std::vector': too few template arguments
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\vector(412): message : see declaration of 'std::vector'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(10,18): error C2923: 'std::vector': 'Customer' is not a valid template type argument for parameter '_Ty'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(16): message : see declaration of 'Customer'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(10,18): error C2976: 'std::vector': too few template arguments
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\vector(412): message : see declaration of 'std::vector'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(11,19): error C2923: 'std::vector': 'Customer' is not a valid template type argument for parameter '_Ty'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(16): message : see declaration of 'Customer'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(11,19): error C2976: 'std::vector': too few template arguments
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\vector(412): message : see declaration of 'std::vector'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(12,21): error C2923: 'std::vector': 'Customer' is not a valid template type argument for parameter '_Ty'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(16): message : see declaration of 'Customer'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(12,21): error C2976: 'std::vector': too few template arguments
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\vector(412): message : see declaration of 'std::vector'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(13,21): error C2923: 'std::vector': 'Customer' is not a valid template type argument for parameter '_Ty'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(16): message : see declaration of 'Customer'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(13,21): error C2976: 'std::vector': too few template arguments
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\vector(412): message : see declaration of 'std::vector'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(14,31): error C2923: 'std::vector': 'Customer' is not a valid template type argument for parameter '_Ty'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(16): message : see declaration of 'Customer'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(14,31): error C2976: 'std::vector': too few template arguments
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\vector(412): message : see declaration of 'std::vector'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(15,35): error C2923: 'std::vector': 'Customer' is not a valid template type argument for parameter '_Ty'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(16): message : see declaration of 'Customer'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(15,35): error C2976: 'std::vector': too few template arguments
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\vector(412): message : see declaration of 'std::vector'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(16,27): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(16,1): error C2086: 'int Customer': redefinition
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(16): message : see declaration of 'Customer'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(16,10): error C2146: syntax error: missing ';' before identifier 'getCustomerFromDB'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(16,41): error C2923: 'std::vector': 'Customer' is not a valid template type argument for parameter '_Ty'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(16): message : see declaration of 'Customer'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(16,41): error C2976: 'std::vector': too few template arguments
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\vector(412): message : see declaration of 'std::vector'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(17,57): error C2923: 'std::vector': 'Customer' is not a valid template type argument for parameter '_Ty'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(16): message : see declaration of 'Customer'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(17,57): error C2976: 'std::vector': too few template arguments
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\vector(412): message : see declaration of 'std::vector'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(18,40): error C2923: 'std::vector': 'Customer' is not a valid template type argument for parameter '_Ty'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(16): message : see declaration of 'Customer'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(18,40): error C2976: 'std::vector': too few template arguments
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\vector(412): message : see declaration of 'std::vector'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\main.cpp(15,15): error C2923: 'std::vector': 'Customer' is not a valid template type argument for parameter '_Ty'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(16): message : see declaration of 'Customer'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\main.cpp(15,15): error C2976: 'std::vector': too few template arguments
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\vector(412): message : see declaration of 'std::vector'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\main.cpp(29,2): error C2923: 'std::vector': 'Customer' is not a valid template type argument for parameter '_Ty'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(16): message : see declaration of 'Customer'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\main.cpp(29,2): error C2976: 'std::vector': too few template arguments
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\vector(412): message : see declaration of 'std::vector'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\main.cpp(29,27): error C2133: 'kundlist': unknown size
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\main.cpp(29,19): error C2512: 'std::vector': no appropriate default constructor available
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\vector(412,14): message : see declaration of 'std::vector'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\main.cpp(62,15): error C2923: 'std::vector': 'Customer' is not a valid template type argument for parameter '_Ty'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(16): message : see declaration of 'Customer'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\main.cpp(62,15): error C2976: 'std::vector': too few template arguments
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\vector(412): message : see declaration of 'std::vector'
+  Generating Code...
