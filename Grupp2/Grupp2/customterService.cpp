@@ -51,9 +51,14 @@ bool hasCustomer(string name, vector<Customer>* kundlist)
 void addCustomer(vector<Customer>* kundlist)
 {
 	string indata = "";
+	cin.ignore();
 	while (true) {
 		cout << "Customer name (# -> go back) -> ";
-		cin >> indata;
+		getline(cin, indata);
+		if (indata.length() == 0) {
+			cout << "Input something" << endl;
+			continue;
+		}
 		if (!hasCustomer(indata, kundlist) || indata == "#") break;
 		cout << "Customer is already found !" << endl;
 	}
@@ -64,9 +69,10 @@ void addCustomer(vector<Customer>* kundlist)
 void readCustomer(vector<Customer>* kundlist)
 {
 	string indata = "";
+	cin.ignore();
 	while (true) {
 		cout << "Customer name (# -> go back) -> ";
-		cin >> indata;
+		getline(cin, indata);
 		if (hasCustomer(indata, kundlist) || indata == "#") break;
 		cout << "Customer not found !" << endl;
 	}
@@ -79,16 +85,17 @@ void updateCustomer(vector<Customer>* kundlist)
 {
 	string oldname = "";
 	string newname = "";
+	cin.ignore();
 	while (true) {
 		cout << "Customer name (# -> go back) -> ";
-		cin >> oldname;
+		getline(cin, oldname);
 		if (hasCustomer(oldname, kundlist) || oldname == "#") break;
 		cout << "Customer not found !" << endl;
 	}
 	if (oldname == "#") return;
 	while (true) {
 		cout << "Customer new name (# -> go back) -> ";
-		cin >> newname;
+		getline(cin, newname);
 		if (!hasCustomer(newname, kundlist) || newname == "#") break;
 		cout << "Customer is already found !" << endl;
 	}
@@ -98,9 +105,10 @@ void updateCustomer(vector<Customer>* kundlist)
 void deleteCustomer(vector<Customer>* kundlist)
 {
 	string indata = "";
+	cin.ignore();
 	while (true) {
 		cout << "Customer name (# -> go back) -> ";
-		cin >> indata;
+		getline(cin, indata);
 		if (hasCustomer(indata, kundlist) || indata == "#") break;
 		cout << "Customer not found !" << endl;
 	}

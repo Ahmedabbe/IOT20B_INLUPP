@@ -1,4 +1,6 @@
+#define _CRT_SECURE_NO_WARNINGS
 #include <iostream>
+#include <time.h>
 #include <sstream>
 #include <string>
 #include<locale.h>
@@ -6,6 +8,8 @@
 #include "CustomerService.h"
 #include "CampaignService.h"
 #include "Customer.h"
+#include "AnnonService.h"
+#include "Campaign.h"
 
 using namespace std;
 
@@ -18,7 +22,7 @@ void customerMeny(string* chosenNum);
 void campaign();
 void campaignMeny(string* chosenNum);
 
-void annons();
+void annons(vector<Campaign>* camplist);
 void annonsMeny(string* chosenNum);
 
 int main() 
@@ -28,12 +32,19 @@ int main()
 
 	vector<Customer> kundlist;
 
+	time_t t = time(NULL);
+	struct tm ct = *localtime(&t);
+	string name = "julia";
+	Campaign camp(name, ct, ct, 3000);
+	vector<Campaign> camplist;
+	camplist.push_back(camp);
+
 	string chosenNum = "6";
 	while (true) {
 		adminMeny(&chosenNum);
 		if (chosenNum == "1") customer(&kundlist);
 		else if (chosenNum == "2") campaign();
-		else if (chosenNum == "3") annons();
+		else if (chosenNum == "3") annons(&camplist);
 		else if (chosenNum == "4") visaAds();
 		else if (chosenNum == "5") break;
 		else cout << "Fel nummer!" << endl;
@@ -70,7 +81,6 @@ void customer(vector<Customer>* kundlist)
 		else if (chosenNum == "4") deleteCustomer(kundlist);
 		else if (chosenNum == "5") break;
 		else cout << "Fel nummer!" << endl;
-		//cout << kundlist->size() << endl;
 	}
 }
 
@@ -114,12 +124,12 @@ void campaignMeny(string* chosenNum)
 	cin >> *chosenNum;
 }
 
-void annons()
+void annons(vector<Campaign>* camplist)
 {
 	string chosenNum = "6";
 	while (true) {
 		annonsMeny(&chosenNum);
-		if (chosenNum == "1") cout << "add annons " << chosenNum << endl;
+		if (chosenNum == "1") addAD(camplist);
 		else if (chosenNum == "2") cout << "read annons " << chosenNum << endl;
 		else if (chosenNum == "3") cout << "update annons " << chosenNum << endl;
 		else if (chosenNum == "4") cout << "delete annons " << chosenNum << endl;

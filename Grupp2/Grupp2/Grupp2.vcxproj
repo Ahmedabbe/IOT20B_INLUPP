@@ -139,12 +139,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ad.cpp" />
+    <ClCompile Include="annonService.cpp" />
+    <ClCompile Include="campaign.cpp" />
     <ClCompile Include="campaignService.cpp" />
     <ClCompile Include="Customer.cpp" />
     <ClCompile Include="customterService.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="AD.h" />
+    <ClInclude Include="AnnonService.h" />
     <ClInclude Include="Campaign.h" />
     <ClInclude Include="CampaignService.h" />
     <ClInclude Include="Customer.h" />
