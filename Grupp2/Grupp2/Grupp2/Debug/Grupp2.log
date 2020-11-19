@@ -1,2 +1,6 @@
 ﻿  campaignService.cpp
-  Grupp2.vcxproj -> C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Debug\Grupp2.exe
+  customterService.cpp
+  main.cpp
+  Generating Code...
+  LINK : C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\Debug\Grupp2.exe not found or not built by the last incremental link; performing full link
+  Grupp2.vcxproj -> C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\Debug\Grupp2.exe
