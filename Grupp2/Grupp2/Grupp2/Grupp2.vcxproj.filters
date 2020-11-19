@@ -24,12 +24,21 @@
     <ClCompile Include="campaignService.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Customer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="CustomerService.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="CampaignService.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Customer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Campaign.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -140,11 +140,14 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="campaignService.cpp" />
+    <ClCompile Include="Customer.cpp" />
     <ClCompile Include="customterService.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Campaign.h" />
     <ClInclude Include="CampaignService.h" />
+    <ClInclude Include="Customer.h" />
     <ClInclude Include="CustomerService.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

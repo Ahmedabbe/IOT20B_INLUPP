@@ -2,15 +2,17 @@
 #include <sstream>
 #include <string>
 #include<locale.h>
+#include <vector>
 #include "CustomerService.h"
 #include "CampaignService.h"
+#include "Customer.h"
 
 using namespace std;
 
 void adminMeny(string* chosenNum);
 void visaAds();
 
-void customer();
+void customer(vector<Customer>* kundlist);
 void customerMeny(string* chosenNum);
 
 void campaign();
@@ -24,10 +26,12 @@ int main()
 	setlocale(LC_ALL, "sv_SE.utf8");
 	setlocale(LC_NUMERIC, "en_US.utf8");
 
+	vector<Customer> kundlist;
+
 	string chosenNum = "6";
 	while (true) {
 		adminMeny(&chosenNum);
-		if (chosenNum == "1") customer();
+		if (chosenNum == "1") customer(&kundlist);
 		else if (chosenNum == "2") campaign();
 		else if (chosenNum == "3") annons();
 		else if (chosenNum == "4") visaAds();
@@ -55,17 +59,18 @@ void visaAds()
 	cout << "visa ads ..." << endl;
 }
 
-void customer()
+void customer(vector<Customer>* kundlist)
 {
 	string chosenNum = "6";
 	while (true) {
 		customerMeny(&chosenNum);
-		if (chosenNum == "1") addCustomer();
-		else if (chosenNum == "2") readCustomer();
-		else if (chosenNum == "3") updateCustomer();
-		else if (chosenNum == "4") deleteCustomer();
+		if (chosenNum == "1") addCustomer(kundlist);
+		else if (chosenNum == "2") readCustomer(kundlist);
+		else if (chosenNum == "3") updateCustomer(kundlist);
+		else if (chosenNum == "4") deleteCustomer(kundlist);
 		else if (chosenNum == "5") break;
 		else cout << "Fel nummer!" << endl;
+		//cout << kundlist->size() << endl;
 	}
 }
 
