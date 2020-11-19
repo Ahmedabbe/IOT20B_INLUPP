@@ -1,0 +1,2 @@
+C:\DevVS\ClassTestC++\Debug\ClassTestC++.exe
+C:\DevVS\ClassTestC++\Debug\ClassTestC++.pdb
