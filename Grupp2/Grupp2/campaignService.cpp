@@ -31,7 +31,7 @@ bool isLeapYear(int year)
 	}
 }
 
-bool validDate(int yearnum, int monnum, int daynum)
+bool validDate(int yearnum, int monnum, int daynum) //test
 {
 	if (isLeapYear(yearnum) && monnum == 2) {
 		if (daynum >= 1 && daynum <= 29) return true;
