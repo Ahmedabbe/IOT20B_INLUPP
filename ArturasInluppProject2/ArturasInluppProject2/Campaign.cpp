@@ -8,7 +8,7 @@
 #include <algorithm>
 using namespace std;
 
-
+// Test
 class Campaign {
 	string name;
 	int id;
