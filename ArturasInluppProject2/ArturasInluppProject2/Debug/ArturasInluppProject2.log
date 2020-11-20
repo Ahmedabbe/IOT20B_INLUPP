@@ -1,0 +1,8 @@
+﻿  Campaign.cpp
+C:\Users\arrrt\source\repos\ArturasInluppProject2\ArturasInluppProject2\State.h(11,17): error C2065: 'Campaign': undeclared identifier
+C:\Users\arrrt\source\repos\ArturasInluppProject2\ArturasInluppProject2\State.h(11,10): error C2923: 'std::vector': 'Campaign' is not a valid template type argument for parameter '_Ty'
+C:\Users\arrrt\source\repos\ArturasInluppProject2\ArturasInluppProject2\State.h(11,10): error C2976: 'std::vector': too few template arguments
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.27.29110\include\vector(413): message : see declaration of 'std::vector'
+C:\Users\arrrt\source\repos\ArturasInluppProject2\ArturasInluppProject2\Campaign.cpp(12,16): error C2011: 'Campaign': 'class' type redefinition
+C:\Users\arrrt\source\repos\ArturasInluppProject2\ArturasInluppProject2\Campaign.h(7): message : see declaration of 'Campaign'
+C:\Users\arrrt\source\repos\ArturasInluppProject2\ArturasInluppProject2\Campaign.cpp(99,11): error C2079: 'cam' uses undefined class 'Campaign'
