@@ -6,21 +6,23 @@
 
 using namespace std;
 
-void addCustomerToDB(string name, vector<Customer>* kundlist)
+void addCustomerToDB(string name, vector<Customer> &kundlist)
 {
 	Customer kund (name);
-	kundlist->push_back(kund);
+	kundlist.push_back(kund);
 	cout << "add new kund success !" << endl;
 }
 
-Customer getCustomerFromDB(string name, vector<Customer>* kundlist) {
-	for (auto kund : *kundlist) {
+Customer getCustomerFromDB(string name, vector<Customer> &kundlist) {
+	Customer k = Customer();
+	for (auto kund : kundlist) {
 		if (kund.getName() == name) return kund;
 	}
+	return k;
 }
 
-void updateCustomerToDB(string oldname, string newname, vector<Customer>* kundlist) {
-	for (auto kund = kundlist->begin(); kund != kundlist->end(); ++kund) {
+void updateCustomerToDB(string oldname, string newname, vector<Customer> kundlist) {
+	for (auto kund = kundlist.begin(); kund != kundlist.end(); ++kund) {
 		if (kund->getName() == oldname) {
 			kund->setName(newname);
 			cout << "Update success for Customer: " << kund->getName() << endl;
@@ -29,32 +31,33 @@ void updateCustomerToDB(string oldname, string newname, vector<Customer>* kundli
 	}
 }
 
-void deleteCustomerFromDB(string name, vector<Customer>* kundlist) {
-	for (auto kund = kundlist->begin(); kund != kundlist->end(); ++kund) {
+void deleteCustomerFromDB(string name, vector<Customer> &kundlist) {
+	for (auto kund = kundlist.begin(); kund != kundlist.end(); ++kund) {
 		if (kund->getName() == name) {
-			kundlist->erase(kund);
+			kundlist.erase(kund);
 			cout << "Delete success ! "<< endl;
 			break;
 		}
 	}
 }
 
-bool hasCustomer(string name, vector<Customer>* kundlist)
+bool hasCustomer(string name, vector<Customer> &kundlist)
 {
-	if (!kundlist->size()) return false;
-	for (auto kund : *kundlist) {
+	if (!kundlist.size()) return false;
+	for (auto kund : kundlist) {
 		if (kund.getName() == name) return true;
 	}	
 	return false;
 }
 
-void addCustomer(vector<Customer>* kundlist)
+void addCustomer(vector<Customer> &kundlist)
 {
 	string indata = "";
 	cin.ignore();
 	while (true) {
 		cout << "Customer name (# -> go back) -> ";
 		getline(cin, indata);
+		//cin >> indata;
 		if (indata.length() == 0) {
 			cout << "Input something" << endl;
 			continue;
@@ -66,22 +69,40 @@ void addCustomer(vector<Customer>* kundlist)
 	addCustomerToDB(indata, kundlist);
 }
 
-void readCustomer(vector<Customer>* kundlist)
+void showCustomer(Customer kund) {
+	cout << "****************************" << endl;
+	cout << "Found Customer name: " << kund.getName() << endl;
+	if (kund.getCampaigns().size() > 0) {
+		cout << "--Has " << kund.getCampaigns().size() << " campaigns" << endl;
+		for (auto camp : kund.getCampaigns()) {
+			cout << "	Campaign name: " << camp.getName() << endl;
+			if (camp.getAds().size() > 0) {
+				cout << "	--This campaign has " << camp.getAds().size() << " ads" << endl;
+				for (auto ad : camp.getAds()) {
+					cout << "		Ad name: " << ad.getName() << endl;
+				}
+			}
+		}
+	}
+}
+
+void readCustomer(vector<Customer> &kundlist)
 {
 	string indata = "";
 	cin.ignore();
 	while (true) {
 		cout << "Customer name (# -> go back) -> ";
 		getline(cin, indata);
+		//cin >> indata;
 		if (hasCustomer(indata, kundlist) || indata == "#") break;
 		cout << "Customer not found !" << endl;
 	}
 	if (indata == "#") return;
 	Customer found = getCustomerFromDB(indata, kundlist);
-	cout << "Found Customer name: " << found.getName() << endl;
+	showCustomer(found);	
 }
 
-void updateCustomer(vector<Customer>* kundlist)
+void updateCustomer(vector<Customer> &kundlist)
 {
 	string oldname = "";
 	string newname = "";
@@ -89,6 +110,7 @@ void updateCustomer(vector<Customer>* kundlist)
 	while (true) {
 		cout << "Customer name (# -> go back) -> ";
 		getline(cin, oldname);
+		//cin >> oldname;
 		if (hasCustomer(oldname, kundlist) || oldname == "#") break;
 		cout << "Customer not found !" << endl;
 	}
@@ -96,19 +118,21 @@ void updateCustomer(vector<Customer>* kundlist)
 	while (true) {
 		cout << "Customer new name (# -> go back) -> ";
 		getline(cin, newname);
+		//cin >> newname;
 		if (!hasCustomer(newname, kundlist) || newname == "#") break;
 		cout << "Customer is already found !" << endl;
 	}
 	if (newname == "#") return;
 	updateCustomerToDB(oldname, newname, kundlist);
 }
-void deleteCustomer(vector<Customer>* kundlist)
+void deleteCustomer(vector<Customer> &kundlist)
 {
 	string indata = "";
 	cin.ignore();
 	while (true) {
 		cout << "Customer name (# -> go back) -> ";
 		getline(cin, indata);
+		//cin >> indata;
 		if (hasCustomer(indata, kundlist) || indata == "#") break;
 		cout << "Customer not found !" << endl;
 	}
@@ -116,3 +140,8 @@ void deleteCustomer(vector<Customer>* kundlist)
 	deleteCustomerFromDB(indata, kundlist);
 }
 
+void showCustomers(vector<Customer> &kundlist) {
+	for (auto kund : kundlist) {
+		showCustomer(kund);
+	}
+}
