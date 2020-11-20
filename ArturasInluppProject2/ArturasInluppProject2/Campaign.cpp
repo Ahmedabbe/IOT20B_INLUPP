@@ -8,27 +8,36 @@
 #include <algorithm>
 using namespace std;
 
-// Test
+
 class Campaign {
+private:
 	string name;
 	int id;
 	//time_t fromDateTime;
 	//time_t toDateTime;
 	float campaignCost;
 	//vector<Ads>adsList;
-	public:
+public:
+	Campaign()
+	{
+		string name = "";
+		int id = 0;
+		float campaignCost = 0;
+
+	}
 	
 	Campaign(string Name, int Id, float CampaignCost)
 	{
-		name = Name;
-		id = Id;
-		campaignCost = CampaignCost;
+		this->name = Name;
+		this->id = Id;
+		this->campaignCost = CampaignCost;
 	}
 
 	string getName()
 	{
 		return name;
 	}
+
 	int getId()
 	{
 		return id;
@@ -41,19 +50,20 @@ class Campaign {
 
 	void CreateCampaign(SYSTEM_STATE* state) {
 
-		string name;
-		int id;
-		float campaignCost;
+		string newName;
+		int newId;
+		float newCampaignCost;
 
 		cout << "Campaign name: ";
-		cin >> name;
+		cin >> newName;
 
 		cout << "Campaign ID: ";
-		cin >> id;
+		cin >> newId;
 
 		cout << "Campaign belop: ";
+		cin >> newCampaignCost;
 
-		Campaign newCampaign(name, id, campaignCost);
+		Campaign newCampaign(newName, newId, newCampaignCost);
 
 		state->campaignList.push_back(newCampaign);
 		cout << endl;
@@ -73,7 +83,7 @@ class Campaign {
 	void PrintCampaign(Campaign* cam)
 	{
 		cout << "Name: " << cam->getName() << endl;
-		//cout << "ID: " << cam->getID() << endl;
+		cout << "ID: " << cam->getId() << endl;
 		cout << endl;
 	}
 	/*void removeCampaign(string ad)
@@ -94,12 +104,12 @@ int main()
 	/*Campaign campaign = Campaign("hej", 232, 343.5);
 	cout << campaign.getId();*/
 
-	SYSTEM_STATE* state;
+	SYSTEM_STATE state;
 	Campaign cam;
 
-	cam.CreateCampaign(state);
+	cam.CreateCampaign(&state);
 
-	//cam.PrintCampaings(&state);
+	cam.PrintCampaings(&state);
 
 	return 0;
 	

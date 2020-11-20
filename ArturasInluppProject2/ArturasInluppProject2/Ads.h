@@ -8,14 +8,11 @@ using namespace std;
 
 class Ads {
 
-	public:
+private:
 
 		/*string adName;
 		int adID;
 		string adText;*/
-		
-	
-
 
 };
 

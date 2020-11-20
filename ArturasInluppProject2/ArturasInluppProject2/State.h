@@ -2,12 +2,15 @@
 #define STATE_INCLUDED
 #include <vector>
 #include "Campaign.h"
+using namespace std;
 
 
 class SYSTEM_STATE
 {
-public:
    
-    std::vector<Campaign>campaignList;
+public:
+    vector<Campaign>campaignList;
+   
+    
 };
-#endif
+#endif STATE_INCLUDED
