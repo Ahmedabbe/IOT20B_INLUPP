@@ -1,34 +1,9 @@
-﻿  Customer.cpp
-  ad.cpp
+﻿  ad.cpp
 C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\AD.h(7,1): error C2059: syntax error: '}'
 C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\AD.h(7,1): error C2143: syntax error: missing ';' before '}'
   adServingEngine.cpp
 C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\AdServingEngine.h(4,1): error C2059: syntax error: '}'
 C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\AdServingEngine.h(4,1): error C2143: syntax error: missing ';' before '}'
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\adServingEngine.cpp(3,19): error C2653: 'AdEngine': is not a class or namespace name
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\adServingEngine.cpp(3,22): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\adServingEngine.cpp(3,23): warning C4508: 'AdEngine': function should return a value; 'void' return type assumed
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\adServingEngine.cpp(4,27): error C2653: 'AdEngine': is not a class or namespace name
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\adServingEngine.cpp(4,28): error C2065: 'vector': undeclared identifier
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\adServingEngine.cpp(4,35): error C2065: 'Customer': undeclared identifier
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\adServingEngine.cpp(4,45): error C2065: 'kundlist': undeclared identifier
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\adServingEngine.cpp(4,53): error C2182: 'setKundlist': illegal use of type 'void'
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\adServingEngine.cpp(4,55): error C2448: 'setKundlist': function-style initializer appears to be a function definition
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\adServingEngine.cpp(7,7): error C2143: syntax error: missing ';' before '<'
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\adServingEngine.cpp(7,7): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\adServingEngine.cpp(7,39): error C2653: 'AdEngine': is not a class or namespace name
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\adServingEngine.cpp(7,42): error C2143: syntax error: missing ';' before '{'
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\adServingEngine.cpp(7,42): error C2447: '{': missing function header (old-style formal list?)
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\adServingEngine.cpp(10,23): error C2653: 'AdEngine': is not a class or namespace name
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\adServingEngine.cpp(10,23): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\adServingEngine.cpp(10,14): error C2146: syntax error: missing ';' before identifier 'getNextAd'
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\adServingEngine.cpp(10,26): error C2143: syntax error: missing ';' before '{'
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\adServingEngine.cpp(10,26): error C2447: '{': missing function header (old-style formal list?)
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\adServingEngine.cpp(15,20): error C2653: 'AdEngine': is not a class or namespace name
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\adServingEngine.cpp(15,20): error C2523: '<Unknown>::~AdEngine': destructor tag mismatch
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\adServingEngine.cpp(15,23): error C4430: missing type specifier - int assumed. Note: C++ does not support default-int
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\adServingEngine.cpp(15,23): error C2084: function 'int AdEngine(void)' already has a body
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\adServingEngine.cpp(3): message : see previous definition of 'AdEngine'
   annonService.cpp
 C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\AD.h(7,1): error C2059: syntax error: '}'
 C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\AD.h(7,1): error C2143: syntax error: missing ';' before '}'
