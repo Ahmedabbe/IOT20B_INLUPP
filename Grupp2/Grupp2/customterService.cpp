@@ -21,7 +21,7 @@ Customer getCustomerFromDB(string name, vector<Customer> &kundlist) {
 	return k;
 }
 
-void updateCustomerToDB(string oldname, string newname, vector<Customer> kundlist) {
+void updateCustomerToDB(string oldname, string newname, vector<Customer> &kundlist) {
 	for (auto kund = kundlist.begin(); kund != kundlist.end(); ++kund) {
 		if (kund->getName() == oldname) {
 			kund->setName(newname);
@@ -73,16 +73,20 @@ void showCustomer(Customer kund) {
 	cout << "****************************" << endl;
 	cout << "Found Customer name: " << kund.getName() << endl;
 	if (kund.getCampaigns().size() > 0) {
-		cout << "--Has " << kund.getCampaigns().size() << " campaigns" << endl;
-		for (auto camp : kund.getCampaigns()) {
-			cout << "	Campaign name: " << camp.getName() << endl;
-			if (camp.getAds().size() > 0) {
-				cout << "	--This campaign has " << camp.getAds().size() << " ads" << endl;
-				for (auto ad : camp.getAds()) {
-					cout << "		Ad name: " << ad.getName() << endl;
+		if (kund.hasActiveCampaign()) {
+			cout << "--Has " << kund.getCampaigns().size() << " active campaigns" << endl;
+			for (auto camp : kund.getCampaigns()) {
+				cout << "	Campaign name: " << camp.getName() << endl;
+				if (camp.getAds().size() > 0) {
+					cout << "	--This campaign has " << camp.getAds().size() << " ads" << endl;
+					for (auto ad : camp.getAds()) {
+						cout << "		Ad name: " << ad.getName() << endl;
+					}
 				}
 			}
 		}
+		else cout<< "--Has no active campaigns" << endl;
+		
 	}
 }
 

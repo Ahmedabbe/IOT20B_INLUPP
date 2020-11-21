@@ -195,8 +195,7 @@ void showAD(string campname, string kundname, AD ad) {
 	cout << "Customer: " << kundname << endl;
 	cout << "Campaign: " << campname << endl;
 	cout << "AD name: " << ad.getName() << endl;
-	cout << "AD text: " << ad.getAdText() << endl;
-	cout << "AD type: " << ad.getAdType() << endl;
+	cout << "AD content: " << ad.getAdContent() << endl;
 }
 void readAD(vector<Customer> &kundlist)
 {

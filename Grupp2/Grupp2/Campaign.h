@@ -3,6 +3,4 @@
 
 
 
-
-
 #endif CAMPAIGN_INCLUDED

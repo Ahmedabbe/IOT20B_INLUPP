@@ -81,8 +81,10 @@ bool isLeapYear(int year)
 	}
 }
 
-bool validDate(int yearnum, int monnum, int daynum) //test
+bool validDate(int yearnum, int monnum, int daynum) 
 {
+	if (yearnum < 2020) return false;
+	if (monnum < 1 || monnum>12) return false;
 	if (isLeapYear(yearnum) && monnum == 2) {
 		if (daynum >= 1 && daynum <= 29) return true;
 	}
@@ -119,6 +121,9 @@ bool checkDate(string* campaigndate, tm* fromto)
 	fromto->tm_year = yearnum - 1900;
 	fromto->tm_mon = monnum - 1;
 	fromto->tm_mday = daynum;
+	fromto->tm_hour = 0;
+	fromto->tm_min = 0;
+	fromto->tm_sec = 0;
 	return true;
 }
 
@@ -180,6 +185,8 @@ void addCampaign(vector<Customer> &kundlist)
 		cout << "fel datumn !" << endl;
 	}
 	if (todate == "#") return;
+	to.tm_hour = 23;
+	to.tm_min=59;
 	addCampaignToDB(name, cost, from, to, kundname, kundlist);
 }
 

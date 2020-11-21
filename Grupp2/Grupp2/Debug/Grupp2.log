@@ -1,12 +1,7 @@
-﻿  ad.cpp
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\AD.h(7,1): error C2059: syntax error: '}'
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\AD.h(7,1): error C2143: syntax error: missing ';' before '}'
+﻿  Customer.cpp
+  ad.cpp
   adServingEngine.cpp
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\AdServingEngine.h(4,1): error C2059: syntax error: '}'
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\AdServingEngine.h(4,1): error C2143: syntax error: missing ';' before '}'
   annonService.cpp
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\AD.h(7,1): error C2059: syntax error: '}'
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\AD.h(7,1): error C2143: syntax error: missing ';' before '}'
 C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(10,25): error C2065: 'Customer': undeclared identifier
 C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(10,18): error C2923: 'std::vector': 'Customer' is not a valid template type argument for parameter '_Ty'
 C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(10,18): error C2976: 'std::vector': too few template arguments
@@ -172,7 +167,10 @@ C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2
 C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\annonService.cpp(32,4): error C2976: 'std::vector': too few template arguments
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\vector(412): message : see declaration of 'std::vector'
 C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\annonService.cpp(32,30): error C2512: 'std::vector': no appropriate default constructor available
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\annonService.cpp(32,52): fatal error C1003: error count exceeds 100; stopping compilation
+C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\vector(412,14): message : see declaration of 'std::vector'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\annonService.cpp(33,25): error C2065: 'type': undeclared identifier
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\annonService.cpp(33,31): error C2065: 'campname': undeclared identifier
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\annonService.cpp(33,39): fatal error C1003: error count exceeds 100; stopping compilation
   campaign.cpp
   campaignService.cpp
 C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(10,25): error C2065: 'Customer': undeclared identifier
@@ -274,56 +272,56 @@ C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2
 C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(62,41): error C3531: 'camp': a symbol whose type contains 'auto' must have an initializer
 C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(62,19): error C2143: syntax error: missing ';' before ':'
 C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(62,41): error C2143: syntax error: missing ';' before ')'
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(125,18): error C2923: 'std::vector': 'Customer' is not a valid template type argument for parameter '_Ty'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(130,18): error C2923: 'std::vector': 'Customer' is not a valid template type argument for parameter '_Ty'
 C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(16): message : see declaration of 'Customer'
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(125,18): error C2976: 'std::vector': too few template arguments
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(130,18): error C2976: 'std::vector': too few template arguments
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\vector(412): message : see declaration of 'std::vector'
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(145,11): error C2146: syntax error: missing ';' before identifier 'foundKund'
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(145,11): error C2065: 'foundKund': undeclared identifier
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(145,23): error C3861: 'getCustomerFromDB': identifier not found
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(186,28): error C2146: syntax error: missing ')' before identifier 'camp'
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(186,51): error C2143: syntax error: missing ';' before '{'
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(186,51): error C2447: '{': missing function header (old-style formal list?)
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(202,19): error C2923: 'std::vector': 'Customer' is not a valid template type argument for parameter '_Ty'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(150,11): error C2146: syntax error: missing ';' before identifier 'foundKund'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(150,11): error C2065: 'foundKund': undeclared identifier
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(150,23): error C3861: 'getCustomerFromDB': identifier not found
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(193,28): error C2146: syntax error: missing ')' before identifier 'camp'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(193,51): error C2143: syntax error: missing ';' before '{'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(193,51): error C2447: '{': missing function header (old-style formal list?)
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(209,19): error C2923: 'std::vector': 'Customer' is not a valid template type argument for parameter '_Ty'
 C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(16): message : see declaration of 'Customer'
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(202,19): error C2976: 'std::vector': too few template arguments
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(209,19): error C2976: 'std::vector': too few template arguments
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\vector(412): message : see declaration of 'std::vector'
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(216,11): error C2146: syntax error: missing ';' before identifier 'found'
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(216,11): error C2065: 'found': undeclared identifier
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(216,19): error C3861: 'getCampaignFromDB': identifier not found
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(217,15): error C2065: 'found': undeclared identifier
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(217,2): error C3861: 'showCampaign': identifier not found
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(220,49): error C2923: 'std::vector': 'Campaign' is not a valid template type argument for parameter '_Ty'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(223,11): error C2146: syntax error: missing ';' before identifier 'found'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(223,11): error C2065: 'found': undeclared identifier
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(223,19): error C3861: 'getCampaignFromDB': identifier not found
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(224,15): error C2065: 'found': undeclared identifier
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(224,2): error C3861: 'showCampaign': identifier not found
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(227,49): error C2923: 'std::vector': 'Campaign' is not a valid template type argument for parameter '_Ty'
 C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(25): message : see declaration of 'Campaign'
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(220,49): error C2976: 'std::vector': too few template arguments
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(227,49): error C2976: 'std::vector': too few template arguments
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\vector(412): message : see declaration of 'std::vector'
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(221,27): error C2663: 'std::vector<_Ty,_Alloc>::begin': 2 overloads have no legal conversion for 'this' pointer
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(221,42): error C3536: 'camp': cannot be used before it is initialized
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(221,53): error C2663: 'std::vector<_Ty,_Alloc>::end': 2 overloads have no legal conversion for 'this' pointer
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(229,75): error C2923: 'std::vector': 'Customer' is not a valid template type argument for parameter '_Ty'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(228,27): error C2663: 'std::vector<_Ty,_Alloc>::begin': 2 overloads have no legal conversion for 'this' pointer
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(228,42): error C3536: 'camp': cannot be used before it is initialized
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(228,53): error C2663: 'std::vector<_Ty,_Alloc>::end': 2 overloads have no legal conversion for 'this' pointer
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(236,75): error C2923: 'std::vector': 'Customer' is not a valid template type argument for parameter '_Ty'
 C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(16): message : see declaration of 'Customer'
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(229,75): error C2976: 'std::vector': too few template arguments
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(236,75): error C2976: 'std::vector': too few template arguments
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\vector(412): message : see declaration of 'std::vector'
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(230,27): error C2663: 'std::vector<_Ty,_Alloc>::begin': 2 overloads have no legal conversion for 'this' pointer
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(230,42): error C3536: 'kund': cannot be used before it is initialized
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(230,53): error C2663: 'std::vector<_Ty,_Alloc>::end': 2 overloads have no legal conversion for 'this' pointer
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(232,4): error C2923: 'std::vector': 'Campaign' is not a valid template type argument for parameter '_Ty'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(237,27): error C2663: 'std::vector<_Ty,_Alloc>::begin': 2 overloads have no legal conversion for 'this' pointer
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(237,42): error C3536: 'kund': cannot be used before it is initialized
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(237,53): error C2663: 'std::vector<_Ty,_Alloc>::end': 2 overloads have no legal conversion for 'this' pointer
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(239,4): error C2923: 'std::vector': 'Campaign' is not a valid template type argument for parameter '_Ty'
 C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(25): message : see declaration of 'Campaign'
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(232,4): error C2976: 'std::vector': too few template arguments
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(239,4): error C2976: 'std::vector': too few template arguments
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\vector(412): message : see declaration of 'std::vector'
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(232,30): error C2512: 'std::vector': no appropriate default constructor available
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(239,30): error C2512: 'std::vector': no appropriate default constructor available
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\vector(412,14): message : see declaration of 'std::vector'
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(240,21): error C2923: 'std::vector': 'Customer' is not a valid template type argument for parameter '_Ty'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(247,21): error C2923: 'std::vector': 'Customer' is not a valid template type argument for parameter '_Ty'
 C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(16): message : see declaration of 'Customer'
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(240,21): error C2976: 'std::vector': too few template arguments
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(247,21): error C2976: 'std::vector': too few template arguments
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\vector(412): message : see declaration of 'std::vector'
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(271,21): error C2923: 'std::vector': 'Customer' is not a valid template type argument for parameter '_Ty'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(278,21): error C2923: 'std::vector': 'Customer' is not a valid template type argument for parameter '_Ty'
 C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(16): message : see declaration of 'Customer'
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(271,21): error C2976: 'std::vector': too few template arguments
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(278,21): error C2976: 'std::vector': too few template arguments
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\vector(412): message : see declaration of 'std::vector'
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(292,20): error C2923: 'std::vector': 'Customer' is not a valid template type argument for parameter '_Ty'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(299,20): error C2923: 'std::vector': 'Customer' is not a valid template type argument for parameter '_Ty'
 C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(16): message : see declaration of 'Customer'
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(292,35): fatal error C1003: error count exceeds 100; stopping compilation
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(299,35): fatal error C1003: error count exceeds 100; stopping compilation
   customterService.cpp
 C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(9,41): error C2061: syntax error: identifier 'vector'
 C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(11,2): error C2065: 'Customer': undeclared identifier
@@ -371,22 +369,22 @@ C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2
 C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(72,28): error C2146: syntax error: missing ')' before identifier 'kund'
 C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(72,34): error C2143: syntax error: missing ';' before '{'
 C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(72,34): error C2447: '{': missing function header (old-style formal list?)
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(89,19): error C2065: 'vector': undeclared identifier
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(89,37): error C2065: 'kundlist': undeclared identifier
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(89,45): error C2182: 'readCustomer': illegal use of type 'void'
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(90,1): error C2448: 'readCustomer': function-style initializer appears to be a function definition
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(105,21): error C2065: 'vector': undeclared identifier
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(105,39): error C2065: 'kundlist': undeclared identifier
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(105,47): error C2182: 'updateCustomer': illegal use of type 'void'
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(106,1): error C2448: 'updateCustomer': function-style initializer appears to be a function definition
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(128,21): error C2065: 'vector': undeclared identifier
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(128,39): error C2065: 'kundlist': undeclared identifier
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(128,47): error C2182: 'deleteCustomer': illegal use of type 'void'
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(129,1): error C2448: 'deleteCustomer': function-style initializer appears to be a function definition
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(143,20): error C2065: 'vector': undeclared identifier
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(143,38): error C2065: 'kundlist': undeclared identifier
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(143,46): error C2182: 'showCustomers': illegal use of type 'void'
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(143,48): error C2448: 'showCustomers': function-style initializer appears to be a function definition
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(93,19): error C2065: 'vector': undeclared identifier
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(93,37): error C2065: 'kundlist': undeclared identifier
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(93,45): error C2182: 'readCustomer': illegal use of type 'void'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(94,1): error C2448: 'readCustomer': function-style initializer appears to be a function definition
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(109,21): error C2065: 'vector': undeclared identifier
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(109,39): error C2065: 'kundlist': undeclared identifier
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(109,47): error C2182: 'updateCustomer': illegal use of type 'void'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(110,1): error C2448: 'updateCustomer': function-style initializer appears to be a function definition
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(132,21): error C2065: 'vector': undeclared identifier
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(132,39): error C2065: 'kundlist': undeclared identifier
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(132,47): error C2182: 'deleteCustomer': illegal use of type 'void'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(133,1): error C2448: 'deleteCustomer': function-style initializer appears to be a function definition
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(147,20): error C2065: 'vector': undeclared identifier
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(147,38): error C2065: 'kundlist': undeclared identifier
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(147,46): error C2182: 'showCustomers': illegal use of type 'void'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(147,48): error C2448: 'showCustomers': function-style initializer appears to be a function definition
   main.cpp
 C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(10,25): error C2065: 'Customer': undeclared identifier
 C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(10,18): error C2923: 'std::vector': 'Customer' is not a valid template type argument for parameter '_Ty'
@@ -527,8 +525,6 @@ C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2
 C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CampaignService.h(16): message : see declaration of 'Campaign'
 C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CampaignService.h(25,30): error C2976: 'std::vector': too few template arguments
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\vector(412): message : see declaration of 'std::vector'
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\AD.h(7,1): error C2059: syntax error: '}'
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\AD.h(7,1): error C2143: syntax error: missing ';' before '}'
 C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\AnnonService.h(11,12): error C2923: 'std::vector': 'Customer' is not a valid template type argument for parameter '_Ty'
 C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CustomerService.h(16): message : see declaration of 'Customer'
 C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\AnnonService.h(11,12): error C2976: 'std::vector': too few template arguments
@@ -570,5 +566,8 @@ C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2
 C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\AnnonService.h(21,14): error C2976: 'std::vector': too few template arguments
 C:\Program Files (x86)\Microsoft Visual Studio\2019\Community\VC\Tools\MSVC\14.26.28801\include\vector(412): message : see declaration of 'std::vector'
 C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\AnnonService.h(22,50): error C2061: syntax error: identifier 'AdType'
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\AnnonService.h(22,50): fatal error C1003: error count exceeds 100; stopping compilation
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\AnnonService.h(23,50): error C2061: syntax error: identifier 'AD'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\AnnonService.h(24,66): error C2923: 'std::vector': 'Campaign' is not a valid template type argument for parameter '_Ty'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\CampaignService.h(16): message : see declaration of 'Campaign'
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\AnnonService.h(24,81): fatal error C1003: error count exceeds 100; stopping compilation
   Generating Code...
