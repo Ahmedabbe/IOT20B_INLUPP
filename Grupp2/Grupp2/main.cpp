@@ -32,14 +32,9 @@ int main()
 	setlocale(LC_NUMERIC, "en_US.utf8");
 
 	AdEngine* engine = new AdEngine();
-	vector<Customer> kundlist = engine->getKundlist();
-
-	/*time_t t = time(NULL);
-	struct tm ct = *localtime(&t);
-	string name = "julia";
-	Campaign camp(name, ct, ct, 3000);
-	vector<Campaign> camplist;
-	camplist.push_back(camp);*/
+	//vector<Customer> kundlist = engine->getKundlist();
+	vector<Customer> kundlist;
+	
 
 	string chosenNum = "6";
 	while (true) {
@@ -69,8 +64,7 @@ void adminMeny(string* chosenNum)
 
 void visaAds(AdEngine* engine, vector<Customer>& kundlist)
 {
-	engine->setKundlist(kundlist);
-	cout << engine->getKundlist().size() << " visas " << endl;
+	
 	cout << "visa next ads ..." << endl;
 }
 

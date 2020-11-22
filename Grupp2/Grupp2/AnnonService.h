@@ -19,9 +19,4 @@ AD getADFromDB(string name, string campname, string kundname, vector<Customer>& 
 void updateADToDB(string oldname, string newname, string campname, string kundname, vector<Customer>& kundlist);
 void deleteADFromDB(string name, string campname, string kundname, vector<Customer>& kundlist);
 void showADs(vector<Customer> &kundlist);
-void gotoCamp(string adname, string text, AdType type, string campname, vector<Campaign>& templist);
 void showAD(string campname, string kundname, AD ad);
-void updateCamp(string oldname, string newname, string campname, vector<Campaign>& templist);
-void gotoAD(string oldname, string newname, vector<AD>& templist);
-void deleteFromCamp(string name, string campname, vector<Campaign>& templist);
-void beginToDelete(string name, vector<AD>& templist);
