@@ -1,0 +1,2 @@
+C:\Users\linus\source\repos\inlupp_2_newCPP\Debug\inlupp_2_newCPP.exe
+C:\Users\linus\source\repos\inlupp_2_newCPP\Debug\inlupp_2_newCPP.pdb
