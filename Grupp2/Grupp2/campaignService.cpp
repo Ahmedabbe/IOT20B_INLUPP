@@ -8,36 +8,59 @@
 
 using namespace std;
 
-void addCampaignToDB(string name, float cost, tm fromdate, tm todate, string kundname, vector<Customer> &kundlist)
+void addCampaignToDB(string name, float cost, tm fromdate, tm todate, Customer* kund)
 {
-	
-			cout << "Add new campaign success !" << endl;
-	
+	Campaign* camp = new Campaign(name, fromdate, todate, cost);
+	vector<Campaign*> templist = kund->getCampaigns();
+	templist.push_back(camp);
+	kund->setCampaigns(templist);
+	cout << "Add new campaign success !" << endl;
 }
 
-Campaign getCampaignFromDB(string name, string kundname, vector<Customer> &kundlist) {
-	Campaign camp = Campaign();
-	return camp;
+Campaign* getCampaignFromDB(string name, Customer* kund) {
+	for (auto camp : kund->getCampaigns()) {
+		if (camp->getName() == name) return camp;
+	}
 }
 
-void deleteCamp(string name, vector<Campaign>& templist) {
-	
-			cout << "Delete camp " << endl;
-	
+void updateCampaignToDB(string newname, Campaign* camp) {
+	camp->setName(newname);
+	cout << "Success !" << endl;
 }
 
-void deleteCampaignFromDB(string name, string kundname, vector<Customer> &kundlist) {
-	
-			cout << "Success !" << endl;			
-	
+void deleteCampaignFromDB(Campaign* camp, Customer* kund) {
+	int index = -1;
+	vector<Campaign*> templist = kund->getCampaigns();
+	for (auto tempcamp : templist) {
+		index++;
+		if (tempcamp->getName() == camp->getName()) {
+			templist.erase(templist.begin() + index);
+			cout << "Delete success ! " << endl;
+			break;
+		}
+	}
+	kund->setCampaigns(templist);
 }
 
-bool hasCampaign(string name, string kundname, vector<Customer> &kundlist)
+bool hasCampaign(string name, Customer* kund)
 {
-	
+	for (auto camp : kund->getCampaigns()) {
+		if (camp->getName() == name) return true;
+	}
+
 	return false;
 }
-
+bool hasCampaign(string name, string kundname, vector<Customer*> kundlist)
+{
+	for (auto kund : kundlist) {
+		if (kund->getName() == kundname) {
+			for (auto camp : kund->getCampaigns()) {
+				if (camp->getName() == name) return true;
+			}
+		}
+	}
+	return false;
+}
 bool isLeapYear(int year)
 {
 	if (year % 4 == 0 && year % 100 != 0) {
@@ -73,7 +96,7 @@ bool validDate(int yearnum, int monnum, int daynum)
 
 bool checkDate(string* campaigndate, tm* fromto)
 {
-	string tempstr = *campaigndate;  
+	string tempstr = *campaigndate;  //2020-10-09
 	if (tempstr.length() < 10) return false;
 	string year = tempstr.substr(0, 4);
 	string mon = tempstr.substr(5, 2);
@@ -97,7 +120,7 @@ bool checkDate(string* campaigndate, tm* fromto)
 	return true;
 }
 
-void addCampaign(vector<Customer> &kundlist)
+void addCampaign(vector<Customer*> &kundlist)
 {
 	string kundname = "";
 	string name = "";
@@ -117,11 +140,11 @@ void addCampaign(vector<Customer> &kundlist)
 		cout << "Customer not found !" << endl;
 	}
 	if (kundname == "#") return;
-	Customer foundKund = getCustomerFromDB(kundname, kundlist);
+	Customer* foundKund = getCustomerFromDB(kundname, kundlist);
 	while (true) {
 		cout << "Campaign name (# -> go back) -> ";
 		cin >> name;
-		if (!hasCampaign(name, kundname, kundlist) || name == "#") break;
+		if (!hasCampaign(name, foundKund) || name == "#") break;
 		cout << "Campaign is already found !" << endl;
 	}
 	if (name == "#") return;
@@ -156,14 +179,26 @@ void addCampaign(vector<Customer> &kundlist)
 	if (todate == "#") return;
 	to.tm_hour = 23;
 	to.tm_min=59;
-	addCampaignToDB(name, cost, from, to, kundname, kundlist);
+	addCampaignToDB(name, cost, from, to, foundKund);
 }
 
-void showCampaign(Campaign camp, string kundname) {
-	cout << "show Camp" << endl;
+void showCampaign(Campaign* camp, string kundname) {
+	cout << "****************************" << endl;
+	cout << "Customer name: " << kundname << endl;
+	cout << "Campaign name: " << camp->getName() << endl;
+	cout << "From: " << camp->getFrom().tm_year+1900 << "-" 
+		<< camp->getFrom().tm_mon + 1 << "-" << camp->getFrom().tm_mday << endl;
+	cout << "To: " << camp->getTo().tm_year + 1900 << "-"
+		<< camp->getTo().tm_mon + 1 << "-" << camp->getTo().tm_mday << endl;
+	if (camp->getAds().size() > 0) {
+		cout << "--Has " << camp->getAds().size() << " ads" << endl;
+		for (auto ad : camp->getAds()) {
+			cout << "	Ad name: " << ad->getName() << ", type: " << ad->getAdType() << endl;
+		}
+	}
 }
 
-void readCampaign(vector<Customer> &kundlist) {
+void readCampaign(vector<Customer*> &kundlist) {
 	string indata = "";
 	string kundname = "";
 	cin.ignore();
@@ -177,17 +212,14 @@ void readCampaign(vector<Customer> &kundlist) {
 		cout << "Not found !" << endl;
 	}
 	if (indata == "#" || kundname == "#") return;
-	Campaign found = getCampaignFromDB(indata, kundname, kundlist);
+	Customer* foundKund = getCustomerFromDB(kundname, kundlist);
+	Campaign* found = getCampaignFromDB(indata, foundKund);
 	showCampaign(found, kundname);
 }
 
-void updateCampaignToDB(string oldname, string newname, string kundnamen, vector<Customer> &kundlist) {
-	
-			cout << "Success !" << endl;
-	
-}
 
-void updateCampaign(vector<Customer> &kundlist) {
+
+void updateCampaign(vector<Customer*> &kundlist) {
 	string kundname = "";
 	string oldname = "";
 	string newname = "";
@@ -199,6 +231,7 @@ void updateCampaign(vector<Customer> &kundlist) {
 		cout << "Customer not found !" << endl;
 	}
 	if (kundname == "#") return;
+	Customer* foundKund = getCustomerFromDB(kundname, kundlist);
 	while (true) {
 		cout << "Campaign old name (# -> go back) -> ";
 		getline(cin, oldname);
@@ -213,10 +246,11 @@ void updateCampaign(vector<Customer> &kundlist) {
 		cout << "Campaign is already found !" << endl;
 	}
 	if (newname == "#") return;
-	updateCampaignToDB(oldname, newname, kundname, kundlist);
+	Campaign* found = getCampaignFromDB(oldname, foundKund);
+	updateCampaignToDB(newname, found);
 }
 
-void deleteCampaign(vector<Customer> &kundlist) {
+void deleteCampaign(vector<Customer*> &kundlist) {
 	string indata = "";
 	string campname = "";
 	cin.ignore();
@@ -234,9 +268,15 @@ void deleteCampaign(vector<Customer> &kundlist) {
 		cout << "Campaign not found !" << endl;
 	}
 	if (campname == "#") return;
-	deleteCampaignFromDB(campname, indata, kundlist);
+	Customer* foundKund = getCustomerFromDB(indata, kundlist);
+	Campaign* found = getCampaignFromDB(campname, foundKund);
+	deleteCampaignFromDB(found, foundKund);
 }
 
-void showCampaigns(vector<Customer> &kundlist) {
-	cout << "show camp list" << endl;
+void showCampaigns(vector<Customer*> &kundlist) {
+	for (auto kund : kundlist) {
+		for (auto camp : kund->getCampaigns()) {
+			showCampaign(camp, kund->getName());
+		}
+	}
 }

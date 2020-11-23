@@ -1,8 +1,6 @@
 #include "AD.h"
 
-AD::AD(){
-	this->adName = "test";
-}
+AD::AD(){}
 
 AD::AD(std::string adName, int adID, std::string adText, AdType adType) {
 	this->adName = adName;

@@ -12,30 +12,46 @@ using namespace std;
 
 //enum AdType { scroll, blink, plainText };
 
-
-void addADToDB(string name, string text, AdType type, string campname, string kundname, vector<Customer> &kundlist)
-{	
-			cout << "Success !" << endl;
-}
-
-AD getADFromDB(string name, string campname, string kundname, vector<Customer> &kundlist) {
-	AD ad = AD();
-	return ad;
-}
-
-void updateADToDB(string oldname, string newname, string campname, string kundname, vector<Customer> &kundlist) {
-			cout << "Success !" << endl;
-}
-
-void deleteADFromDB(string name, string campname, string kundname, vector<Customer>& kundlist) {
-	
-			cout << "Success !" << endl;
-	
-}
-
-bool hasAD(string name, string campaignName, string kundname, vector<Customer> &kundlist)
+void addADToDB(string name, string text, AdType type, Campaign* camp)
 {
-	
+	AD* ad = new AD(name, text, type);
+	vector<AD*> templist = camp->getAds();
+	templist.push_back(ad);
+	camp->setAds(templist);
+	cout << "Success !" << endl;
+}
+
+
+AD* getADFromDB(string name, Campaign* camp) {
+	for (auto ad : camp->getAds()) {
+		if (ad->getName() == name) return ad;
+	}
+}
+
+void updateADToDB(string newname, AD* ad) {
+	ad->setName(newname);
+	cout << "Success !" << endl;
+}
+
+void deleteADFromDB(AD* ad, Campaign* camp) {
+	int index = -1;
+	vector<AD*> templist = camp->getAds();
+	for (auto tempad : templist) {
+		index++;
+		if (tempad->getName() == ad->getName()) {
+			templist.erase(templist.begin() + index);
+			cout << "Delete success ! " << endl;
+			break;
+		}
+	}
+	camp->setAds(templist);
+}
+
+bool hasAD(string name, Campaign* camp)
+{
+	for (auto ad : camp->getAds()) {
+		if (ad->getName() == name) return true;
+	}
 	return false;
 }
 
@@ -47,7 +63,7 @@ bool isType(string typestr, AdType* type) {
 	return true;
 }
 
-void addAD(vector<Customer> &kundlist)
+void addAD(vector<Customer*> &kundlist)
 {
 	string indata = "";
 	string text = "";
@@ -63,17 +79,19 @@ void addAD(vector<Customer> &kundlist)
 		cout << "Customer not found !" << endl;
 	}
 	if (kundname == "#") return;
+	Customer* foundKund = getCustomerFromDB(kundname, kundlist);
 	while (true) {		
 		cout << "Campaign name (# -> go back) -> ";
 		getline(cin, campname);
-		if (hasCampaign(campname, kundname, kundlist) || campname == "#") break;
+		if (hasCampaign(campname, foundKund) || campname == "#") break;
 		cout << "Campaign not found !" << endl;
 	}
 	if (campname == "#") return;
+	Campaign* foundCamp = getCampaignFromDB(campname, foundKund);
 	while (true) {
 		cout << "AD name (# -> go back) -> ";
 		getline(cin, indata);
-		if (!hasAD(indata, campname, kundname, kundlist) || indata == "#") break;
+		if (!hasAD(indata, foundCamp) || indata == "#") break;
 		cout << "AD name is already found !" << endl;
 	}
 	if (indata == "#") return;
@@ -91,7 +109,7 @@ void addAD(vector<Customer> &kundlist)
 		cout << "Wrong type !" << endl;
 	}
 	if (typestr == "#") return;
-	addADToDB(indata, text, type, campname, kundname, kundlist);
+	addADToDB(indata, text, type, foundCamp);
 }
 void showAD(string campname, string kundname, AD ad) {
 	cout << "****************************" << endl;
@@ -100,7 +118,14 @@ void showAD(string campname, string kundname, AD ad) {
 	cout << "AD name: " << ad.getName() << endl;
 	cout << "AD content: " << ad.getAdContent() << endl;
 }
-void readAD(vector<Customer> &kundlist)
+void showAD(string campname, string kundname, AD* ad) {
+	cout << "****************************" << endl;
+	cout << "Customer: " << kundname << endl;
+	cout << "Campaign: " << campname << endl;
+	cout << "AD name: " << ad->getName() << endl;
+	cout << "AD content: " << ad->getAdContent() << endl;
+}
+void readAD(vector<Customer*> &kundlist)
 {
 	string indata = "";
 	string campname = "";
@@ -113,25 +138,27 @@ void readAD(vector<Customer> &kundlist)
 		cout << "Customer not found !" << endl;
 	}
 	if (indata == "#") return;
+	Customer* foundKund = getCustomerFromDB(indata, kundlist);
 	while (true) {
 		cout << "Campaign name (# -> go back) -> ";
 		getline(cin, campname);
-		if (hasCampaign(campname, indata, kundlist) || campname == "#") break;
+		if (hasCampaign(campname, foundKund) || campname == "#") break;
 		cout << "Campaign not found !" << endl;
 	}
 	if (campname == "#") return;
+	Campaign* foundCamp = getCampaignFromDB(campname, foundKund);
 	while (true) {
 		cout << "Ad name (# -> go back) -> ";
 		getline(cin, adname);
-		if (hasAD(adname, campname, indata, kundlist) || adname == "#") break;
+		if (hasAD(adname, foundCamp) || adname == "#") break;
 		cout << "Ad not found !" << endl;
 	}
 	if (adname == "#") return;
-	AD found = getADFromDB(adname, campname, indata, kundlist);
+	AD* found = getADFromDB(adname, foundCamp);
 	showAD(campname, indata, found);
 }
 
-void updateAD(vector<Customer> &kundlist)
+void updateAD(vector<Customer*> &kundlist)
 {
 	string oldname = "";
 	string newname = "";
@@ -145,30 +172,33 @@ void updateAD(vector<Customer> &kundlist)
 		cout << "Customer not found !" << endl;
 	}
 	if (indata == "#") return;
+	Customer* foundKund = getCustomerFromDB(indata, kundlist);
 	while (true) {
 		cout << "Campaign name (# -> go back) -> ";
 		getline(cin, campname);
-		if (hasCampaign(campname, indata, kundlist) || campname == "#") break;
+		if (hasCampaign(campname, foundKund) || campname == "#") break;
 		cout << "Campaign not found !" << endl;
 	}
 	if (campname == "#") return;
+	Campaign* foundCamp = getCampaignFromDB(campname, foundKund);
 	while (true) {
 		cout << "AD old name (# -> go back) -> ";
 		getline(cin, oldname);
-		if (hasAD(oldname, campname, indata, kundlist) || oldname == "#") break;
+		if (hasAD(oldname, foundCamp) || oldname == "#") break;
 		cout << "AD not found !" << endl;
 	}
 	if (oldname == "#") return;
+	AD* found = getADFromDB(oldname, foundCamp);
 	while (true) {
 		cout << "AD new name (# -> go back) -> ";
 		getline(cin, newname);
-		if (!hasAD(newname, campname, indata, kundlist) || oldname == "#") break;
+		if (!hasAD(newname, foundCamp) || oldname == "#") break;
 		cout << "AD new name is already found !" << endl;
 	}
 	if (newname == "#") return;
-	updateADToDB(oldname, newname, campname, indata, kundlist);
+	updateADToDB(newname, found);
 }
-void deleteAD(vector<Customer> &kundlist)
+void deleteAD(vector<Customer*> &kundlist)
 {
 	string indata = "";
 	string campname = "";
@@ -181,23 +211,32 @@ void deleteAD(vector<Customer> &kundlist)
 		cout << "Customer not found !" << endl;
 	}
 	if (indata == "#") return;
+	Customer* foundKund = getCustomerFromDB(indata, kundlist);
 	while (true) {
 		cout << "Campaign name (# -> go back) -> ";
 		getline(cin, campname);
-		if (hasCampaign(campname, indata, kundlist) || campname == "#") break;
+		if (hasCampaign(campname, foundKund) || campname == "#") break;
 		cout << "Campaign not found !" << endl;
 	}
 	if (campname == "#") return;
+	Campaign* foundCamp = getCampaignFromDB(campname, foundKund);
 	while (true) {
 		cout << "Ad name (# -> go back) -> ";
 		getline(cin, adname);
-		if (hasAD(adname, campname, indata, kundlist) || adname == "#") break;
+		if (hasAD(adname, foundCamp) || adname == "#") break;
 		cout << "Ad not found !" << endl;
 	}
 	if (adname == "#") return;
-	deleteADFromDB(adname, campname, indata, kundlist);
+	AD* found = getADFromDB(adname, foundCamp);
+	deleteADFromDB(found, foundCamp);
 }
 
-void showADs(vector<Customer> &kundlist) {
-	cout << "show ads " << endl;
+void showADs(vector<Customer*> &kundlist) {
+	for (auto kund : kundlist) {
+		for (auto camp : kund->getCampaigns()) {
+			for (auto ad : camp->getAds()) {
+				showAD(camp->getName(), kund->getName(), ad);
+			}			
+		}
+	}
 }

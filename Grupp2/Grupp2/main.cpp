@@ -15,15 +15,15 @@
 using namespace std;
 
 void adminMeny(string* chosenNum);
-void visaAds(AdEngine* engine, vector<Customer>& kundlist);
+void visaAds(AdEngine* engine, vector<Customer*>& kundlist);
 
-void customer(vector<Customer> &kundlist);
+void customer(vector<Customer*> &kundlist);
 void customerMeny(string* chosenNum);
 
-void campaign(vector<Customer> &kundlist);
+void campaign(vector<Customer*> &kundlist);
 void campaignMeny(string* chosenNum);
 
-void annons(vector<Customer> &kundlist);
+void annons(vector<Customer*> &kundlist);
 void annonsMeny(string* chosenNum);
 
 int main() 
@@ -32,9 +32,7 @@ int main()
 	setlocale(LC_NUMERIC, "en_US.utf8");
 
 	AdEngine* engine = new AdEngine();
-	//vector<Customer> kundlist = engine->getKundlist();
-	vector<Customer> kundlist;
-	
+	vector<Customer*> kundlist = engine->getKundlist();
 
 	string chosenNum = "6";
 	while (true) {
@@ -62,13 +60,14 @@ void adminMeny(string* chosenNum)
 	cin >> *chosenNum;
 }
 
-void visaAds(AdEngine* engine, vector<Customer>& kundlist)
+void visaAds(AdEngine* engine, vector<Customer*>& kundlist)
 {
-	
+	engine->setKundlist(kundlist);
+	cout << engine->getKundlist().size() << " visas " << endl;
 	cout << "visa next ads ..." << endl;
 }
 
-void customer(vector<Customer> &kundlist)
+void customer(vector<Customer*> &kundlist)
 {
 	string chosenNum = "7";
 	while (true) {
@@ -98,7 +97,7 @@ void customerMeny(string* chosenNum)
 	cin >> *chosenNum;
 }
 
-void campaign(vector<Customer> &kundlist)
+void campaign(vector<Customer*> &kundlist)
 {
 	string chosenNum = "7";
 	while (true) {
@@ -127,7 +126,7 @@ void campaignMeny(string* chosenNum)
 	cin >> *chosenNum;
 }
 
-void annons(vector<Customer> &kundlist)
+void annons(vector<Customer*> &kundlist)
 {
 	string chosenNum = "7";
 	while (true) {

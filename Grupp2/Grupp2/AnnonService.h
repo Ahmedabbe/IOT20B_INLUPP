@@ -8,15 +8,16 @@
 
 using namespace std;
 
-void addAD(vector<Customer> &kundlist);
-void addADToDB(string name, string text, AdType type, string campname, string kundname, vector<Customer> &kundlist);
+void addAD(vector<Customer*> &kundlist);
+void addADToDB(string name, string text, AdType type, Campaign* camp);
 bool isType(string typtstr, AdType* type);
-bool hasAD(string name, string campaignName, string kundname, vector<Customer> &kundlist);
-void readAD(vector<Customer> &kundlist);
-void updateAD(vector<Customer> &kundlist);
-void deleteAD(vector<Customer> &kundlist);
-AD getADFromDB(string name, string campname, string kundname, vector<Customer>& kundlist);
-void updateADToDB(string oldname, string newname, string campname, string kundname, vector<Customer>& kundlist);
-void deleteADFromDB(string name, string campname, string kundname, vector<Customer>& kundlist);
-void showADs(vector<Customer> &kundlist);
+bool hasAD(string name, Campaign* camp);
+void readAD(vector<Customer*> &kundlist);
+void updateAD(vector<Customer*> &kundlist);
+void deleteAD(vector<Customer*> &kundlist);
+AD* getADFromDB(string name, Campaign* camp);
+void updateADToDB(string newname, AD* ad);
+void deleteADFromDB(AD* ad, Campaign* camp);
+void showADs(vector<Customer*> &kundlist);
+void showAD(string campname, string kundname, AD* ad);
 void showAD(string campname, string kundname, AD ad);
