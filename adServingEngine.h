@@ -5,16 +5,14 @@
 #include<vector>
 using namespace std;
 
-class AdServingEngine  {
+class AdServingEngine {
 	vector<Customer>customerList;
-	vector<Customer>activeCustomerList;
 public:
 	AdServingEngine();
-	
-	int getCustomerId();
+	int createCustomerId();
 	void addCustomer(Customer cust);
 	Customer getCustomerbyIndex(int index);
-	void deleteCustomer(Customer cust);	
-	AD getNextAd();
+	void deleteCustomer(Customer cust);
+	AD* getNextAd();
 };
 #endif
