@@ -13,7 +13,8 @@ public:
 	AdEngine();
 	void setKundlist(vector<Customer*> kundlist);
 	vector<Customer*> getKundlist();
-	AD getNextAd();
+	//AD getNextAd();
+	AD* getNextAd();
 	~AdEngine();
 };
 #endif // !_AD_ENGINE

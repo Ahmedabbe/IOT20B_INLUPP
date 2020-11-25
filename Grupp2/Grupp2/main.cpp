@@ -5,6 +5,7 @@
 #include <string>
 #include<locale.h>
 #include <vector>
+#include <windows.h>
 #include "CustomerService.h"
 #include "CampaignService.h"
 #include "Customer.h"
@@ -15,7 +16,8 @@
 using namespace std;
 
 void adminMeny(string* chosenNum);
-void visaAds(AdEngine* engine, vector<Customer*>& kundlist);
+//void visaAds(AdEngine* engine, vector<Customer*>& kundlist);
+void fakeDisplay(AdEngine* engine, vector<Customer*>& kundlist);
 
 void customer(vector<Customer*> &kundlist);
 void customerMeny(string* chosenNum);
@@ -40,7 +42,7 @@ int main()
 		if (chosenNum == "1") customer(kundlist);
 		else if (chosenNum == "2") campaign(kundlist);
 		else if (chosenNum == "3") annons(kundlist);
-		else if (chosenNum == "4") visaAds(engine, kundlist);
+		else if (chosenNum == "4") fakeDisplay(engine, kundlist);
 		else if (chosenNum == "9") break;
 		else cout << "Fel nummer!" << endl;
 	}
@@ -59,13 +61,27 @@ void adminMeny(string* chosenNum)
 	cout << "Vilken nummer -> ";
 	cin >> *chosenNum;
 }
-
-void visaAds(AdEngine* engine, vector<Customer*>& kundlist)
-{
+void fakeDisplay(AdEngine* engine, vector<Customer*>& kundlist) {
 	engine->setKundlist(kundlist);
-	cout << engine->getKundlist().size() << " visas " << endl;
-	cout << "visa next ads ..." << endl;
+	char inChar;
+	do
+	{
+		std::cout << "display ads";
+		std::cout << engine->getNextAd()->getAdContent() << "\n";
+		Sleep(2000);
+		cout << "Enter X to go back to Menu :";
+		cin >> inChar;
+	} while (inChar != 'X');
+	return;
 }
+
+
+//void visaAds(AdEngine* engine, vector<Customer*>& kundlist)
+//{
+//	engine->setKundlist(kundlist);
+//	cout << engine->getKundlist().size() << " visas " << endl;
+//	cout << "visa next ads ..." << endl;
+//}
 
 void customer(vector<Customer*> &kundlist)
 {

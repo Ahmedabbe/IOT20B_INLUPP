@@ -1,12 +1,8 @@
-﻿  Customer.cpp
-  adServingEngine.cpp
-  annonService.cpp
-  campaign.cpp
-  campaignService.cpp
-  customterService.cpp
+﻿  adServingEngine.cpp
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\adServingEngine.cpp(17,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\adServingEngine.cpp(31,21): warning C4018: '<': signed/unsigned mismatch
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\adServingEngine.cpp(15,29): warning C4101: 'currentCampaign': unreferenced local variable
   main.cpp
   Generating Code...
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(20): warning C4715: 'getCustomerFromDB': not all control paths return a value
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\campaignService.cpp(24): warning C4715: 'getCampaignFromDB': not all control paths return a value
-C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\annonService.cpp(29): warning C4715: 'getADFromDB': not all control paths return a value
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\adServingEngine.cpp(42): warning C4715: 'AdEngine::getNextAd': not all control paths return a value
   Grupp2.vcxproj -> C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Debug\Grupp2.exe
