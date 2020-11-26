@@ -61,13 +61,12 @@ void adminMeny(string* chosenNum)
 	cout << "Vilken nummer -> ";
 	cin >> *chosenNum;
 }
-void fakeDisplay(AdEngine* engine, vector<Customer*>& kundlist) {
+void fakeDisplay(AdEngine* engine, vector<Customer*>&kundlist) {
 	engine->setKundlist(kundlist);
 	char inChar;
+	srand(time(NULL));
 	do
-	{
-		std::cout << "display ads";
-		std::cout << engine->getNextAd()->getAdContent() << "\n";
+	{	std::cout << engine->getNextAd()->getAdContent() << "\n";
 		Sleep(2000);
 		cout << "Enter X to go back to Menu :";
 		cin >> inChar;

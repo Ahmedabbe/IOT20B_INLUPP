@@ -8,7 +8,8 @@ void AdEngine::setKundlist(vector<Customer*> kundlist) {
 vector<Customer*> AdEngine::getKundlist() {
 	return this->kundlist;
 }
-AD* AdEngine::getNextAd() {
+
+AD* AdEngine::getNextAd() {	
 	if (!kundlist.empty()) {
 		vector<Campaign*>activeCampaignsList;
 		float totalVisibility = 0, min = 0;
@@ -26,19 +27,25 @@ AD* AdEngine::getNextAd() {
 				}
 			}
 		}
+		
 		//do {
-		float randomSelection = static_cast <float> (rand()) / (static_cast <float> (RAND_MAX / totalVisibility));
-		for (int i = 0; i < activeCampaignsList.size(); i++) {
-			if (min <= randomSelection && randomSelection < min + activeCampaignsList[i]->getCost())
-				nextCampaign = activeCampaignsList[i];
-			else
-				min += activeCampaignsList[i]->getCost();
-		}
-		//} while (nextCampaign->getId() == currentCampaign->getId());
+			float randomSelection =static_cast <float> (rand()) / (static_cast <float> (RAND_MAX / totalVisibility));
+			for (int i = 0; i < activeCampaignsList.size(); i++) {
+				if (min <= randomSelection && randomSelection < min + activeCampaignsList[i]->getCost()) {
+					nextCampaign = activeCampaignsList[i];
+					break;
+				}
+				else
+					min += activeCampaignsList[i]->getCost();
+			}
+		//} while (nextCampaign->getName() == currentCampaign->getName());
 		int adIndex = rand() % nextCampaign->getAds().size();
+		cout << randomSelection << "," << totalVisibility << "," << activeCampaignsList.size() << adIndex << "\n";
 		AD* nextAd = nextCampaign->getAds()[adIndex];
 		return nextAd;
 	}
+	else
+		return NULL;
 }
 
 //AD AdEngine::getNextAd() {
