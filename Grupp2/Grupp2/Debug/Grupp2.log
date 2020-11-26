@@ -1,5 +1,3 @@
 ﻿  adServingEngine.cpp
-C:\Users\athin\OneDrive\Documents\nackademin\c_c++\inlupp2\IOT20B_INLUPP\Grupp2\Grupp2\adServingEngine.cpp(18,21): warning C4018: '<': signed/unsigned mismatch
-C:\Users\athin\OneDrive\Documents\nackademin\c_c++\inlupp2\IOT20B_INLUPP\Grupp2\Grupp2\adServingEngine.cpp(33,22): warning C4018: '<': signed/unsigned mismatch
 C:\Users\athin\OneDrive\Documents\nackademin\c_c++\inlupp2\IOT20B_INLUPP\Grupp2\Grupp2\adServingEngine.cpp(16,29): warning C4101: 'currentCampaign': unreferenced local variable
   Grupp2.vcxproj -> C:\Users\athin\OneDrive\Documents\nackademin\c_c++\inlupp2\IOT20B_INLUPP\Grupp2\Debug\Grupp2.exe

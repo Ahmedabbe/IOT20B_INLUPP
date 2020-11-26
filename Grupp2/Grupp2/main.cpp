@@ -65,12 +65,19 @@ void fakeDisplay(AdEngine* engine, vector<Customer*>&kundlist) {
 	engine->setKundlist(kundlist);
 	char inChar;
 	srand(time(NULL));
-	do
-	{	std::cout << engine->getNextAd()->getAdContent() << "\n";
-		Sleep(2000);
-		cout << "Enter X to go back to Menu :";
-		cin >> inChar;
-	} while (inChar != 'X');
+	if (engine->getNextAd() != NULL)
+	{
+		do
+		{
+			std::cout << engine->getNextAd()->getAdContent() << "\n";
+			Sleep(2000);
+			cout << "Enter X to go back to Menu :";
+			cin >> inChar;
+		} while (inChar != 'X');
+	}
+	else
+		cout << "There are no active ads" << "\n";
+
 	return;
 }
 
