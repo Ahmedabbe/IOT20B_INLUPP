@@ -1,8 +1,12 @@
 #include "Campaign.h"
 
+int Campaign::staticID = 0;
 Campaign::Campaign(){}
 
-Campaign::Campaign(std::string name, struct tm from, struct tm to, float cost) {
+Campaign::Campaign(std::string name, struct tm from, struct tm to, float cost, int kundID) {
+	Campaign::staticID++;
+	this->id = Campaign::staticID;
+	this->kundID = kundID;
 	this->name = name;
 	this->fromDateTime = from;
 	this->toDateTime = to;
@@ -17,6 +21,12 @@ void Campaign::setCost(float cost) {
 }
 void Campaign::setAds(vector<AD*> ads) {
 	this->adsList = ads;
+}
+int Campaign::getId() {
+	return this->id;
+}
+int Campaign::getKundID() {
+	return this->kundID;
 }
 std::string Campaign::getName() {
 	return this->name;

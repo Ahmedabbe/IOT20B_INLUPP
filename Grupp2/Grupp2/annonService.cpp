@@ -14,7 +14,7 @@ using namespace std;
 
 void addADToDB(string name, string text, AdType type, Campaign* camp)
 {
-	AD* ad = new AD(name, text, type);
+	AD* ad = new AD(name, text, type, camp->getKundID(), camp->getId());
 	vector<AD*> templist = camp->getAds();
 	templist.push_back(ad);
 	camp->setAds(templist);

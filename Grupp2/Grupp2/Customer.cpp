@@ -8,10 +8,13 @@
 //	hasActiveCampaigns = false;
 //
 //}
+int Customer::staticID = 0;
 Customer::Customer(){}
 
 Customer::Customer(string name) {
 	this->newName = name;
+	Customer::staticID++;
+	this->newID = Customer::staticID;
 	//hasActiveCampaigns = status;
 }
 

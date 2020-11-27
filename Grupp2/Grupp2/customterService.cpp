@@ -70,21 +70,24 @@ void addCustomer(vector<Customer*> &kundlist)
 
 void showCustomer(Customer* kund) {
 	cout << "****************************" << endl;
-	cout << "Found Customer name: " << kund->getName() << endl;
+	cout << "Found Customer name: " << kund->getName() << ", id: " << kund->getID() << endl;
 	if (kund->getCampaigns().size() > 0) {
 		if (kund->hasActiveCampaign()) {
 			cout << "--Has " << kund->getCampaigns().size() << " active campaigns" << endl;
 			for (auto camp : kund->getCampaigns()) {
-				cout << "	Campaign name: " << camp->getName() << endl;
+				cout << "	Campaign name: " << camp->getName() 
+					<< " , id: " << camp->getId() << ", kund id: " << camp->getKundID() << endl;
 				if (camp->getAds().size() > 0) {
 					cout << "	--This campaign has " << camp->getAds().size() << " ads" << endl;
 					for (auto ad : camp->getAds()) {
-						cout << "		Ad name: " << ad->getName() << endl;
+						cout << "		Ad name: " << ad->getName() 
+							<< " , id: " << ad->getID() << ", kund id: " << ad->getKundID() 
+							<< ", campaign id: " << ad->getCampID() << endl;
 					}
 				}
 			}
 		}
-		else cout<< "--Has no active campaigns" << endl;		
+		else cout << "--Has no active campaigns" << endl;
 	}
 }
 

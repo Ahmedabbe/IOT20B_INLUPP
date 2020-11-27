@@ -10,7 +10,7 @@ using namespace std;
 
 void addCampaignToDB(string name, float cost, tm fromdate, tm todate, Customer* kund)
 {
-	Campaign* camp = new Campaign(name, fromdate, todate, cost);
+	Campaign* camp = new Campaign(name, fromdate, todate, cost, kund->getID());
 	vector<Campaign*> templist = kund->getCampaigns();
 	templist.push_back(camp);
 	kund->setCampaigns(templist);

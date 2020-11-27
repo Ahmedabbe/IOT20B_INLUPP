@@ -12,7 +12,7 @@ using namespace std;
 
 class Customer {
 private:
-
+	static int staticID;
 	string newName;
 	int newID;
 	vector<Campaign*> Campaigns;
