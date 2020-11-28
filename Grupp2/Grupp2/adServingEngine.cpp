@@ -9,11 +9,11 @@ vector<Customer*> AdEngine::getKundlist() {
 	return this->kundlist;
 }
 
-AD* AdEngine::getNextAd() {	
+AD* AdEngine::getNextAd() {
 	if (!kundlist.empty()) {
 		vector<Campaign*>activeCampaignsList;
 		float totalVisibility = 0, min = 0;
-		Campaign* nextCampaign, * currentCampaign;
+		Campaign* nextCampaign;
 		nextCampaign = NULL;
 		for (Customer* kund: kundlist) {
 			if (kund->hasActiveCampaign()) {
@@ -29,7 +29,7 @@ AD* AdEngine::getNextAd() {
 		}
 		if (!activeCampaignsList.empty())
 		{
-			//do {
+			do {
 			float randomSelection = static_cast <float> (rand()) / (static_cast <float> (RAND_MAX / totalVisibility));
 			for (Campaign* c : activeCampaignsList) {
 				if (min <= randomSelection && randomSelection < min + c->getCost()) {
@@ -39,7 +39,8 @@ AD* AdEngine::getNextAd() {
 				else
 					min += c->getCost();
 			}
-			//} while (nextCampaign->getId() == currentCampaign->getId());
+			} while (nextCampaign->getKundID() == currentCustomerId);
+			currentCustomerId = nextCampaign->getKundID();
 			if (nextCampaign->getAds().size())
 			{
 				int adIndex = rand() % nextCampaign->getAds().size();

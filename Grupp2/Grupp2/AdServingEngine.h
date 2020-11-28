@@ -9,6 +9,7 @@ using namespace std;
 
 class AdEngine {
 	vector<Customer*> kundlist;
+	int currentCustomerId=NULL;
 public:
 	AdEngine();
 	void setKundlist(vector<Customer*> kundlist);
