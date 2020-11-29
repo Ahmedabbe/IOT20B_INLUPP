@@ -1,1 +1,3 @@
-﻿  Grupp2.vcxproj -> C:\Users\athin\OneDrive\Documents\nackademin\c_c++\inlupp2\IOT20B_INLUPP\Grupp2\Debug\Grupp2.exe
+﻿  adServingEngine.cpp
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\adServingEngine.cpp(46,8): warning C4101: 'nextAd': unreferenced local variable
+  Grupp2.vcxproj -> C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Debug\Grupp2.exe

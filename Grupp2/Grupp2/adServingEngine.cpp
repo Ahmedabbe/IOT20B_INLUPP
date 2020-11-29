@@ -1,6 +1,7 @@
 #include<ctime>
 #include "AdServingEngine.h"
 
+int AdEngine::currentCustomerId = 0;
 AdEngine::AdEngine() {};
 void AdEngine::setKundlist(vector<Customer*> kundlist) {
 	this->kundlist = kundlist;
@@ -18,35 +19,38 @@ AD* AdEngine::getNextAd() {
 		for (Customer* kund: kundlist) {
 			if (kund->hasActiveCampaign()) {
 				for (auto camp : kund->getCampaigns()) {
-					time_t now = time(NULL);
+					/*time_t now = time(NULL);
 					if (mktime(&camp->getFrom()) <= now && now < mktime(&camp->getTo()))
-					{
+					{*/
 						totalVisibility += camp->getCost();
 						activeCampaignsList.push_back(camp);
-					}
+					//}
 				}
 			}
 		}
 		if (!activeCampaignsList.empty())
 		{
 			do {
+				min = 0;
 			float randomSelection = static_cast <float> (rand()) / (static_cast <float> (RAND_MAX / totalVisibility));
-			for (Campaign* c : activeCampaignsList) {
-				if (min <= randomSelection && randomSelection < min + c->getCost()) {
-					nextCampaign = c;
-					break;
+				for (Campaign* c : activeCampaignsList) {
+					if (min <= randomSelection && randomSelection < min + c->getCost()) {
+						nextCampaign = c;
+						break;
+					}
+					else
+						min += c->getCost();
 				}
-				else
-					min += c->getCost();
-			}
-			} while (nextCampaign->getKundID() == currentCustomerId);
-			currentCustomerId = nextCampaign->getKundID();
-			if (nextCampaign->getAds().size())
+			} while (nextCampaign->getKundID() == AdEngine::currentCustomerId);
+			AdEngine::currentCustomerId = nextCampaign->getKundID();
+			AD* nextAd;
+			if (nextCampaign->getAds().size()) 
 			{
+
 				int adIndex = rand() % nextCampaign->getAds().size();
 				AD* nextAd = nextCampaign->getAds()[adIndex];
 				return nextAd;
-			}			
+			}
 		}		
 	}
 	return NULL;
