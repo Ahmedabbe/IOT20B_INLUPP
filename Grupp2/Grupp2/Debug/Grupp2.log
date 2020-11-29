@@ -1,3 +1,8 @@
-﻿  adServingEngine.cpp
+﻿  Customer.cpp
+  adServingEngine.cpp
 C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\adServingEngine.cpp(46,8): warning C4101: 'nextAd': unreferenced local variable
+  customterService.cpp
+  Generating Code...
+C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Grupp2\customterService.cpp(21): warning C4715: 'getCustomerFromDB': not all control paths return a value
+  LINK : C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Debug\Grupp2.exe not found or not built by the last incremental link; performing full link
   Grupp2.vcxproj -> C:\Users\Julia\Documents\GitHub\JuliaGu808origin\azuregroup\IOT20B_INLUPP\Grupp2\Debug\Grupp2.exe

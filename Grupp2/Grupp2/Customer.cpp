@@ -71,7 +71,7 @@ bool Customer::hasActiveCampaign() {
 		if (difftime(mktime(&todaydate), mktime(&from)) >= 0
 			&& difftime(mktime(&to), mktime(&todaydate)) >= 0) camps.push_back(camp);
 	}
-	this->setCampaigns(camps);
+	//this->setCampaigns(camps);
 	return camps.size();
 }
 

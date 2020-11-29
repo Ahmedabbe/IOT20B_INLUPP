@@ -19,12 +19,12 @@ AD* AdEngine::getNextAd() {
 		for (Customer* kund: kundlist) {
 			if (kund->hasActiveCampaign()) {
 				for (auto camp : kund->getCampaigns()) {
-					/*time_t now = time(NULL);
+					time_t now = time(NULL);
 					if (mktime(&camp->getFrom()) <= now && now < mktime(&camp->getTo()))
-					{*/
+					{
 						totalVisibility += camp->getCost();
 						activeCampaignsList.push_back(camp);
-					//}
+					}
 				}
 			}
 		}

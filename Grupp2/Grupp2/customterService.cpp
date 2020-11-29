@@ -2,6 +2,7 @@
 #include <sstream>
 #include <string>
 #include<locale.h>
+#include<ctime>
 #include "Customer.h"
 
 using namespace std;
@@ -69,12 +70,20 @@ void addCustomer(vector<Customer*> &kundlist)
 }
 
 void showCustomer(Customer* kund) {
+	vector<Campaign*>activeCampaignsList;
 	cout << "****************************" << endl;
 	cout << "Found Customer name: " << kund->getName() << ", id: " << kund->getID() << endl;
 	if (kund->getCampaigns().size() > 0) {
 		if (kund->hasActiveCampaign()) {
-			cout << "--Has " << kund->getCampaigns().size() << " active campaigns" << endl;
 			for (auto camp : kund->getCampaigns()) {
+				time_t now = time(NULL);
+				if (mktime(&camp->getFrom()) <= now && now < mktime(&camp->getTo()))
+				{
+					activeCampaignsList.push_back(camp);
+				}
+			}
+			cout << "--Has " << activeCampaignsList.size() << " active campaigns" << endl;
+			for (auto camp : activeCampaignsList) {
 				cout << "	Campaign name: " << camp->getName() 
 					<< " , id: " << camp->getId() << ", kund id: " << camp->getKundID() << endl;
 				if (camp->getAds().size() > 0) {
